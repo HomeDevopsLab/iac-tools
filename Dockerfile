@@ -27,4 +27,5 @@ RUN curl -L "https://releases.hashicorp.com/terraform/${TF_VERSION}/terraform_${
     mv terraform /usr/local/bin/ && \
     rm terraform.zip && \
     chmod +x /usr/local/bin/terraform
-RUN pipx install --include-deps ansible
+RUN pipx install --include-deps ansible && \
+    pipx inject ansible requests
