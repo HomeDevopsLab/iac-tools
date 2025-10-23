@@ -15,6 +15,7 @@ RUN apt-get update && \
     apt-get install -y \
     git \
     curl \
+    jq \
     unzip \
     pipx \
     python3-requests && \
