@@ -22,6 +22,7 @@ This Docker image is based on Ubuntu 24.04 and includes popular IAC tools common
 
 - Git - Version control system
 - Curl - Command line tool for transferring data
+- JQ - Command line JSON processor
 - Unzip - Archive extraction utility
 - Pipx - Tool for installing and running Python applications in isolated environments
 
