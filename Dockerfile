@@ -18,7 +18,8 @@ RUN apt-get update && \
     jq \
     unzip \
     pipx \
-    python3-requests && \
+    python3-requests \
+    python3-tz && \
     rm -rf /var/lib/apt/lists/*
 RUN curl -L "https://github.com/gruntwork-io/terragrunt/releases/download/${TERRAGRUNT_VERSION}/${BINARY_NAME}" -o "${BINARY_NAME}" && \
     chmod +x "${BINARY_NAME}" && \
