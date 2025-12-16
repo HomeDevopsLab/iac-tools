@@ -9,6 +9,7 @@ This Docker image is based on Ubuntu 24.04 and includes popular IAC tools common
 - **Terraform** - Infrastructure provisioning tool
 - **Terragrunt** - Terraform wrapper for managing multiple environments
 - **Ansible** - Configuration management and automation tool
+- **Vault** - Hashicorp vault binary
 
 ## Included Tools
 
@@ -17,11 +18,14 @@ This Docker image is based on Ubuntu 24.04 and includes popular IAC tools common
 | Terraform  | 1.11.4   | Infrastructure as Code tool for building, changing, and versioning infrastructure                |
 | Terragrunt | v0.77.22 | Thin wrapper for Terraform that provides extra tools for working with multiple Terraform modules |
 | Ansible    | Latest   | Automation platform for configuration management, application deployment, and task automation    |
+| vault      | Latest   | Hashicorp vault client for managing vault resources                                              |
 
 ## Additional Packages
 
 - Git - Version control system
 - Curl - Command line tool for transferring data
+- Wget - Commandline tool for downloading data
+- GPG - Data encryption
 - JQ - Command line JSON processor
 - Unzip - Archive extraction utility
 - Pipx - Tool for installing and running Python applications in isolated environments
