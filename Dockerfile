@@ -5,7 +5,7 @@ LABEL version="1.0"
 
 ENV DEBIAN_FRONTEND="noninteractive"
 ENV TERRAGRUNT_VERSION="v0.77.22"
-ENV TF_VERSION="1.11.4"
+ENV TF_VERSION="1.15.3"
 ENV ARCH="amd64"
 ENV OS="linux"
 ENV BINARY_NAME="terragrunt_${OS}_${ARCH}"
