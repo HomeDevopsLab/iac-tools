@@ -47,9 +47,9 @@ RUN pipx install --include-deps ansible && \
     pipx inject ansible requests pytz
 
 # Gitlab CLI
-RUN wget "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1.117.0/glab_1.117.0_${OS}_${ARCH}.deb" && \
-    dpkg -i glab_1.117.0_${OS}_${ARCH}.deb \
-    rm -f glab_1.117.0_${OS}_${ARCH}.deb
+RUN curl -L "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1.117.0/glab_1.117.0_${OS}_${ARCH}.deb" -o glab.deb && \
+    dpkg -i glab.deb \
+    rm -f glab.deb
 
 # Github CLI
 RUN curl -sS https://webi.sh/gh | sh
