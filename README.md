@@ -26,6 +26,7 @@ This Docker image is based on Ubuntu 24.04 and includes popular IAC tools common
 - Curl - Command line tool for transferring data
 - Wget - Commandline tool for downloading data
 - GPG - Data encryption
+- Gettext-base - Provides `envsubst` for substituting environment variables in templates
 - JQ - Command line JSON processor
 - Unzip - Archive extraction utility
 - Pipx - Tool for installing and running Python applications in isolated environments
@@ -95,7 +96,7 @@ See [GITHUB_ACTIONS_SETUP.md](GITHUB_ACTIONS_SETUP.md) for detailed setup instru
 
 - `DEBIAN_FRONTEND=noninteractive` - Prevents interactive prompts during package installation
 - `TERRAGRUNT_VERSION=v0.77.22` - Specifies the Terragrunt version to install
-- `TF_VERSION=1.11.4` - Specifies the Terraform version to install
+- `TF_VERSION=1.15.3` - Specifies the Terraform version to install
 - `ARCH=amd64` - Target architecture
 - `OS=linux` - Target operating system
 - `PATH` - Includes `/root/.local/bin` for pipx-installed tools
