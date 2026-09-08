@@ -48,7 +48,7 @@ RUN pipx install --include-deps ansible && \
 
 # Gitlab CLI
 RUN curl -L "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1.117.0/glab_1.117.0_${OS}_${ARCH}.deb" -o glab.deb && \
-    dpkg -i glab.deb \
+    dpkg -i glab.deb && \
     rm -f glab.deb
 
 # Github CLI
