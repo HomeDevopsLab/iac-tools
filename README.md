@@ -10,6 +10,8 @@ This Docker image is based on Ubuntu 24.04 and includes popular IAC tools common
 - **Terragrunt** - Terraform wrapper for managing multiple environments
 - **Ansible** - Configuration management and automation tool
 - **Vault** - Hashicorp vault binary
+- **GitLab CLI (glab)** - Command line interface for GitLab
+- **GitHub CLI (gh)** - Command line interface for GitHub
 
 ## Included Tools
 
@@ -19,6 +21,8 @@ This Docker image is based on Ubuntu 24.04 and includes popular IAC tools common
 | Terragrunt | v0.77.22 | Thin wrapper for Terraform that provides extra tools for working with multiple Terraform modules |
 | Ansible    | Latest   | Automation platform for configuration management, application deployment, and task automation    |
 | vault      | Latest   | Hashicorp vault client for managing vault resources                                              |
+| glab       | 1.117.0  | GitLab CLI for managing merge requests, pipelines, issues and repositories from the terminal     |
+| gh         | Latest   | GitHub CLI for managing pull requests, issues, releases and repositories from the terminal       |
 
 ## Additional Packages
 
@@ -56,6 +60,8 @@ docker run -it --rm -v $(pwd):/workspace -w /workspace iac-tools:latest /bin/bas
 docker run --rm -v $(pwd):/workspace -w /workspace iac-tools:latest terraform --version
 docker run --rm -v $(pwd):/workspace -w /workspace iac-tools:latest terragrunt --version
 docker run --rm -v $(pwd):/workspace -w /workspace iac-tools:latest ansible --version
+docker run --rm -v $(pwd):/workspace -w /workspace iac-tools:latest glab --version
+docker run --rm -v $(pwd):/workspace -w /workspace iac-tools:latest gh --version
 ```
 
 ### Docker Compose
